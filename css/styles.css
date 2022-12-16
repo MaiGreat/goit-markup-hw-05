@@ -428,6 +428,10 @@ text-align: center;
     transform: translate(0, 0);
 }
 
+.overlay-link:focus .overlay-img {
+    transform: translate(0, 0);
+}
+
 /*button*/
 .nav-button {
     color: var(--accent-color);
