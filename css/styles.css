@@ -194,11 +194,15 @@ img {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-tite{
     display: flex;
     padding: auto;
+  
 
 }
 
@@ -270,6 +274,7 @@ img {
     border-radius: 4px;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 8px;
 }
 
 /*.about-us:nth-child(1)::before {
@@ -359,7 +364,6 @@ margin-bottom: 72px;
     display: inline-block;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 168px;
     height: 88px;
     
@@ -367,6 +371,7 @@ margin-bottom: 72px;
 
 .customers-list {
     fill: #8E8F99;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list:hover,
@@ -416,7 +421,7 @@ text-align: center;
 .portfolio {
     border: 0.5px solid #F4F4FD;
     padding: 32px 16px 32px 16px;
-    transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .portfolio-link:hover,
@@ -427,7 +432,7 @@ text-align: center;
 
 .portfolio-link {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    
+    transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -584,7 +589,7 @@ gap: 24px;
     left: 0px;
     top: 0px;
     background: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms, vivsibility 250ms;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
