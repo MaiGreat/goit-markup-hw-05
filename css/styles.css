@@ -32,6 +32,7 @@ ul {
 
 header .container {
     display: flex;
+    align-items: center;
 
 }
 
@@ -102,6 +103,7 @@ img {
     text-decoration: none;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    display: block;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -124,9 +126,9 @@ img {
     margin-right: 40px;
 }
 
-.page-header {
+/*.page-header {
     padding: 24px 0;
-}
+}*/
 
 /*auth-nav */
 
@@ -147,6 +149,8 @@ img {
     text-decoration: none;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    padding: 24px 0;
 }
 
   .site-nav .link::after {
@@ -220,7 +224,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     border: none;
-    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .button-hero:active, 
@@ -228,7 +233,7 @@ img {
 .hero .button-hero:focus {
     background: #404BBF;
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     
 
 }
@@ -361,25 +366,29 @@ margin-bottom: 72px;
 
 .customers-icon {
     display: inline-block;
-
     
+}
+
+.customers-add {
+    width: 168px;
+    height: 88px;
 }
 
 .customers-list {
     fill: #8E8F99;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-list:hover,
 .customers-list:focus
  {
-    background-color: #FFFFFF;
     fill: var(--accent-color);
-    border-radius: 4px;
-    border: 1px solid #4D5AE5;
+    border-color: #4D5AE5;
 }
 
 .section .section-title {
@@ -421,7 +430,7 @@ text-align: center;
     display: block;
     text-decoration: none;
     color: var(--main-text-color);
-    transition: shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08)
 }
     
@@ -483,7 +492,7 @@ text-align: center;
     font-family: inherit;
     background: var(--logo-past-text);
     letter-spacing: 0.04em;
-    transition: transparent 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
